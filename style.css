@@ -1,0 +1,113 @@
+/* Set box-sizing to border-box to include padding in width/height calculation */
+* {
+  box-sizing: border-box;
+}
+
+/* Set margin and padding of the body to 0 to remove default spacing */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, black, gray);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Style the header with flexbox */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Set the top position to 0 */
+  left: 0; /* Set the left position to 0 */
+  right: 0; /* Set the right position to 0 */
+  z-index: 1; /* Set a high z-index to make sure the header is on top */
+  background-color: #333333;
+}
+
+/* Style the logo image */
+header img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  max-height: 80px; /* Reduce the max height of the logo */
+}
+
+/* Style the navigation bar */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #1f1e1f;
+}
+
+/* Add padding to the top of the body to make space for the fixed header */
+body {
+  padding-top: 125px;
+}
+
+.page-divider {
+  height: 5px;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+section h2 {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table td {
+  border: 1px solid white;
+  padding:10px;
+}
+
+
+#services {
+  text-align: center;
+}
+
+#inquire {
+  text-align: center;
+}
+
+/* Add scroll-behavior property to smoothly scroll to top */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce the size of the images in the past-works section */
+#past-works img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
